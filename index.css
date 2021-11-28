@@ -1,3 +1,93 @@
-body {
-    background-color: darkgrey;
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Press+Start+2P&family=Stalinist+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
+
+body {
+    width: 100%;
+}
+
+.section_toDoList {
+    max-width: 860px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.header_list {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+
+.header_text {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Comforter', cursive;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.main_list {
+    height: 56px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.input_task {
+    height: 100%;
+    width: 480px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(30,132,242,0.52);
+    font-size: 32px;
+}
+
+.input_task::placeholder {
+    color: rgb(209, 205, 205);
+}
+
+.create_task_btn {
+    width: 150px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    background-color: rgba(198, 225, 253, 0.92);
+}
+.create_task_btn:hover {
+    cursor: pointer;
+    color: #ffff;
+    background-color:rgba(8, 124, 248, 0.52);
+}
+
+.select_tasks {
+    width: 200px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    border: 3px solid rgba(8, 124, 248, 0.52);
+    outline: none;
+}
+
+.ul_tasks_list {
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+

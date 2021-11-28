@@ -8,22 +8,26 @@
     <title>ToDo List</title>
   </head>
   <body>
-    <section id="toDo_List">
-      <input type="text" id="inp" placeholder="Введите текст" />
-      <button id="createBtn">Создать задачу</button>
-      <select id="tasks">
-        <option value="all_tasks" selected>Все задачи</option>
-        <option value="done_tasks">Сделанные задачи</option>
-        <option value="deleted_tasks">Удаленные задачи</option>
-      </select>
-      <div id="tasksList">
-        <div id="newTask">
-          <span id="task_text">some text</span>
-          <input type="radio" name="task_option" id="done_task" />
-          <input type="radio" name="task_option" id="delete_task" />
-        </div>
+    <section id="toDo_list" class="section_toDoList">
+      <h1 class="header_list">Todo List</h1>
+      <p class="header_text">Создай свой список дел</p>
+      <div id="main_toDoList" class="main_list">
+        <input
+          type="text"
+          id="inp"
+          class="input_task"
+          placeholder="Введите текст"
+        />
+        <button id="create_btn" class="create_task_btn">Создать задачу</button>
+        <select id="tasks" class="select_tasks">
+          <option value="all_tasks" selected>Все задачи</option>
+          <option value="done_tasks">Сделанные задачи</option>
+          <option value="deleted_tasks">Удаленные задачи</option>
+        </select>
       </div>
+      <ul id="tasks_list" class="ul_tasks_list"></ul>
     </section>
     <script src="index.js"></script>
+    x
   </body>
 </html>
