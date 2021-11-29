@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -49,7 +50,7 @@ body {
     justify-content: space-between;
 }
 
-.input_task {
+.input_task, .text_task {
     height: 100%;
     width: 480px;
     border: none;
@@ -62,7 +63,7 @@ body {
     color: rgb(209, 205, 205);
 }
 
-.create_task_btn {
+.create_task_btn, .done_btn, .del_btn {
     width: 150px;
     height: 40px;
     font-family: 'Press Start 2P', cursive;
@@ -90,4 +91,41 @@ body {
     list-style: none;
 }
 
+.new_task, .done_task, .delete_task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
 
+.text_task {
+    border: none;
+    flex-wrap: wrap;
+}
+
+.done_btn {
+    background: #39FF14;
+}
+
+.del_btn {
+    background: #FF3131;
+}
+
+.new_task > p {
+    color: #ffff;
+    background:rgba(8, 124, 248, 0.52) ;
+}
+
+.done_task > p {
+    color: #ffff;
+    background: #39FF14;
+    text-decoration: line-through;
+}
+
+.delete_task > p {
+    color: #ffff;
+    background: #FF3131;
+}
+
+.hide {
+    display: none;
+}
