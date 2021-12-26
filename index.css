@@ -1,131 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Press+Start+2P&family=Stalinist+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Press+Start+2P&family=Stalinist+One&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    /* border: 1px solid black; */
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    width: 100%;
+  width: 100%;
 }
 
 .section_toDoList {
-    max-width: 860px;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+  max-width: 860px;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header_list {
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    font-weight: 400;
-    font-size: 64px;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow:
-    0 0 6px rgba(202,228,225,0.92),
-    0 0 30px rgba(202,228,225,0.34),
-    0 0 12px rgba(30,132,242,0.52),
-    0 0 21px rgba(30,132,242,0.92),
-    0 0 34px rgba(30,132,242,0.78),
-    0 0 54px rgba(30,132,242,0.92);
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+    0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+    0 0 54px rgba(30, 132, 242, 0.92);
 }
 
 .header_text {
-    margin-top: 1rem;
-    text-align: center;
-    font-family: 'Comforter', cursive;
-    font-weight: 600;
-    font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Comforter", cursive;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 .main_list {
-    height: 56px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  height: 56px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.input_task, .text_task {
-    height: 100%;
-    width: 480px;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgba(30,132,242,0.52);
-    font-size: 32px;
+.input_task,
+.text_task {
+  height: 100%;
+  width: 480px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(30, 132, 242, 0.52);
+  font-size: 32px;
 }
 
 .input_task::placeholder {
-    color: rgb(209, 205, 205);
+  color: rgb(209, 205, 205);
 }
 
-.create_task_btn, .done_btn, .del_btn {
-    width: 150px;
-    height: 40px;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1rem;
-    background-color: rgba(198, 225, 253, 0.92);
+.create_task_btn,
+.done_btn,
+.del_btn {
+  width: 150px;
+  height: 40px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  background-color: rgba(198, 225, 253, 0.92);
 }
 .create_task_btn:hover {
-    cursor: pointer;
-    color: #ffff;
-    background-color:rgba(8, 124, 248, 0.52);
+  cursor: pointer;
+  color: #ffff;
+  background-color: rgba(8, 124, 248, 0.52);
 }
 
 .select_tasks {
-    width: 200px;
-    height: 40px;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 13px;
-    border: 3px solid rgba(8, 124, 248, 0.52);
-    outline: none;
+  width: 200px;
+  height: 40px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 13px;
+  border: 3px solid rgba(8, 124, 248, 0.52);
+  outline: none;
 }
 
 .ul_tasks_list {
-    margin-top: 30px;
-    padding: 0;
-    list-style: none;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
 }
 
-.new_task, .done_task, .delete_task {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+.new_task,
+.done_task,
+.delete_task {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .text_task {
-    border: none;
-    flex-wrap: wrap;
+  border: none;
+  flex-wrap: wrap;
 }
 
 .done_btn {
-    background: #39FF14;
+  background: #39ff14;
 }
 
 .del_btn {
-    background: #FF3131;
+  background: #ff3131;
 }
 
 .new_task > p {
-    color: #ffff;
-    background:rgba(8, 124, 248, 0.52) ;
+  color: #ffff;
+  background: rgba(8, 124, 248, 0.52);
 }
 
 .done_task > p {
-    color: #ffff;
-    background: #39FF14;
-    text-decoration: line-through;
+  color: #ffff;
+  background: #39ff14;
+  text-decoration: line-through;
 }
 
 .delete_task > p {
-    color: #ffff;
-    background: #FF3131;
+  color: #ffff;
+  background: #ff3131;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
